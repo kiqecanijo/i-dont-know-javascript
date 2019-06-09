@@ -101,3 +101,15 @@ function makeAdder(x) {
 }
 var plusOne = makeAdder(1);
 console.log(plusOne(4))
+
+
+//PROTOTYPE
+const sampleObject = {
+  a:13
+}
+
+const b = Object.create(sampleObject)
+b.b = 14
+
+console.log(b.a)
+console.log(b.b)
