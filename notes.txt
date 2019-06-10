@@ -1,0 +1,22 @@
+// IMPORTANT
+//javascript es concurrente y asincrono
+
+//event LOOP
+
+Call stack
+Web apis
+Callback queue
+
+//callback
+//calback itś a starsday way to manage your async request, for example:
+
+function getProfession(id,callback){
+  const [usr] = elements.find(el => el.id == id)
+  callback(null,usr)
+}
+
+getProfession(14,(err,user) => {
+    !err && console.log(user) || console.log(`error: ${err}`)
+
+    // if no error !err && getBoss .... and more nasting callbacks
+})
